@@ -45,7 +45,8 @@
 
 {
     
-    NSString *str = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&Units=metric", self.txtfd.text];
+   NSString *str = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&Units=metric", self.txtfd.text];
+    
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:str]];
     
@@ -80,11 +81,11 @@
     NSDate * sunriseDate = [NSDate dateWithTimeIntervalSince1970:sunrise.longValue];
     NSDate * sunsetDate = [NSDate dateWithTimeIntervalSince1970:sunset.longValue];
     
-    self.temp.text = [@"Temperature :" stringByAppendingString:[temp description]];
-    self.wind.text = [@"Wind :" stringByAppendingString:[wind description]];
+    self.temp.text = [@"Temperature:" stringByAppendingString:[temp description]];
+    self.wind.text = [@"Wind:" stringByAppendingString:[wind description]];
     
-    self.sunrise.text = [@"Sunrise :" stringByAppendingString:[sunriseDate description]];
-    self.sunset.text = [@"Sunset" stringByAppendingString:[sunsetDate description]];
+    self.sunrise.text = [@"Sunrise:" stringByAppendingString:[sunriseDate description]];
+    self.sunset.text = [@"Sunset:" stringByAppendingString:[sunsetDate description]];
     
 
 }
