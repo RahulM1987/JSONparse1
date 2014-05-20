@@ -41,6 +41,9 @@
 }
 
 
+
+// Connection with the api (NSURL connection) Asynchronousweb service call.
+
 - (void)callservice;
 
 {
@@ -56,6 +59,8 @@
     
 }
 
+
+// Delegate methods - connection
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
